@@ -24,3 +24,18 @@ This is a simple example of a CDK project that can be used with the VSCode Devco
 6. Run `aws sts get-caller-identity` to check if your aws credentials are working
 
 7. Run `cdk bootstrap` and then, `cdk deploy` to deploy the stack
+
+
+## Git 
+
+if you want to commit and push the repository inside the container, you need to set your git credentials.
+Run the following commands in the terminal: [ref](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials)
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@address"
+```
+
+and reopen the repository in the container by rebuilding the container.
+
+- `ctrl+shift+p` -> `Dev Containers: Rebuild Container`
