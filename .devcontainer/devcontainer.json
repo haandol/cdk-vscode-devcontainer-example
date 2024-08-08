@@ -1,0 +1,15 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "CDK",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": {},
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers-contrib/features/aws-cdk:2": {}
+	},
+	"postCreateCommand": "npm install",
+  "mounts": [
+    "source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/node/.aws,type=bind"
+  ]
+}
