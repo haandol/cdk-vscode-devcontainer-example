@@ -6,11 +6,24 @@
 	"features": {
 		"ghcr.io/devcontainers/features/aws-cli:1": {},
 		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/sshd:1": {},
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"ghcr.io/devcontainers-contrib/features/aws-cdk:2": {}
 	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"extensions.verifySignature": false
+			},
+			"extensions": [
+				"PKief.material-icon-theme",
+				"eamodio.gitlens"
+			]
+		}
+	},
 	"postCreateCommand": "npm install",
-  "mounts": [
-    "source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/node/.aws,type=bind"
-  ]
+	"mounts": [
+		"source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/node/.aws,type=bind",
+		"source=${env:HOME}${env:USERPROFILE}/.ssh,target=/root/.ssh,type=bind"
+	]
 }
