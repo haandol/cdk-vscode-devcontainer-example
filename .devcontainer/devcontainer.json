@@ -7,6 +7,7 @@
 		"ghcr.io/devcontainers/features/aws-cli:1": {},
 		"ghcr.io/devcontainers/features/git:1": {},
 		"ghcr.io/devcontainers/features/sshd:1": {},
+		"ghcr.io/mikaello/devcontainer-features/modern-shell-utils:1": {},
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"ghcr.io/devcontainers-contrib/features/aws-cdk:2": {}
 	},
