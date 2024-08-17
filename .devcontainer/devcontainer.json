@@ -17,6 +17,7 @@
 				"extensions.verifySignature": false
 			},
 			"extensions": [
+				"ms-azuretools.vscode-docker",
 				"PKief.material-icon-theme",
 				"eamodio.gitlens"
 			]
